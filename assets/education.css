@@ -1,0 +1,183 @@
+/*navbar options*/
+.webPages{
+    height: 60px;
+    width: 100vw;
+    background-color: #22223b;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed; /*search for content center*/
+  
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+   
+}
+.webPages a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.studies{
+    height: auto;
+    min-height: 200px;
+    width: 70%;
+    
+    color: white;
+    text-align: center;
+    background-color: #22223b;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    animation: changePosition ease-in 2s  forwards;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+/*background image of paragraph*/
+.backgroundImg{
+   
+  min-height: 100vh; /* fills full screen height */
+  width: 100%;
+  background-image: url("backStudent.jpeg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* offset for fixed navbar */
+  box-sizing: border-box;
+}
+
+
+
+ /*new table style*/
+ .education-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: separate; /*  allows spacing between cells */
+  border-spacing: 0 15px;     /* adds vertical space between rows */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.education-table th,
+.education-table td {
+  padding: 20px; /*  increases space inside cells */
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+  font-size: 1rem;
+  color: #4a4e69;
+}
+
+ .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 1rem;
+  color: #dbbadd;
+}
+
+.responsive-table th {
+  background-color: #22223b;
+  color: #f5ebe0;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #f0d8ed;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+
+  .responsive-table td {
+    display: block;
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    white-space: pre-line;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    color: #22223b;
+  }
+
+  .responsive-table ul {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .responsive-table li {
+    margin-bottom: 5px;
+  }
+}
+
+ @keyframes changePosition {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px); /*  stops slightly above original position */
+    opacity: 1;
+  }
+}
+/*change backgroundimg when change screen size*/
+@keyframes backgroundImgchange{
+
+}
+@media (max-width:760px){
+    .backgroundImg{
+        background-image: url("image/0.jpeg");
+        background-size: cover;
+        
+    }
+}
+
+/*theme change button*/
+#mode{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: end;
+    margin-right: 20px;
+    
+}
+#mode:hover{
+    border: 2px solid #dbbadd;
+}
+/*achor tag of webPages*/
+a:hover{
+    text-decoration: underline #dbbadd ;
+}
