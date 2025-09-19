@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./Profile_files/myprof.css">
+    <link rel="stylesheet" href="./Profile_files/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    
+</head>
+<body>
+  <header>
+    <div class="navd">
+    
+      <div class="space"></div>
+      <div class="edu"><a href="http://127.0.0.1:5500/education.html">Education</a></div>
+      <div class="cont"><a href="http://127.0.0.1:5500/contact.html">Let's connect</a></div>
+    </div>
+  </header>
+  <h1 id="head1">About me</h1>
+  <div class="space"></div>
+  <div class="intro">
+  <div class="greet">
+    <p>Greetings, my name is Noreen, and I am a professional web designer. I have successfully designed up to ten websites within a single month. 
+      I am available to assist you in transitioning your business to an online platform.</p>
+  </div> 
+  <div class="what-do">
+    <p id="do-msg">What I do!</p>
+    
+    <div id="doing-outer">
+    <div class="doing">
+    <img src="./Profile_files/001-user-friendly.png" alt="">
+ <p>I love turning ideas into beautiful, intuitive designs that speak to people. Clients get websites that feel personal, purposeful, and visually striking. 
+  Every layout I create is a reflection of care, creativity, and connection.</p></div>
+    <div class="doing">
+    <img src="./Profile_files/digital-services.png" alt="">
+    <p>I’m passionate about writing clean, responsive code that brings designs to life. 
+      Clients enjoy fast, seamless experiences that feel effortless and engaging. I build with heart—every interaction crafted to delight and perform.</p> </div>
+    <div class="doing">
+    <img src="./Profile_files/vpn.png">
+    <p>I genuinely enjoy uncovering how systems work and making them run better. Clients benefit from secure, stable networks that support their goals.
+       My analysis is driven by curiosity, precision, and a desire to protect.</p> </div>
+    </div>
+  </div>
+</div>
+ 
+    
+ 
+
+<script src="./Profile_files/third.js.download"></script>
+<script src="./Profile_files/four.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

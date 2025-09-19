@@ -1,0 +1,233 @@
+*{
+    padding: 0px; /* good practice*/
+    margin: 0px;
+    box-sizing: border-box; 
+}
+body{
+    background: 
+    radial-gradient(circle at left top,#4a4e69, #9a8c98 50%, white 100%);
+    background-size: 200% 200%;  /* Ensures it covers the whole viewport */
+    /* background-repeat: no-repeat; Prevents repeating    */
+ height: 100vh;
+margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Heading of greet*/
+#head1{
+    color:#f2e9e4;
+    text-align: center;
+    text-transform: uppercase;
+}
+#menu{
+    height: 60px;
+    background-color: antiquewhite;
+    color:azure;
+
+}
+.navd{
+    height: 60px;
+    width: 100vw;
+    background-color: #22223b;
+    border: none;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;/*Centers items vertically */
+    gap: 20px;
+}
+
+.space{
+    height: 60px;
+    width: 250px;
+}
+.cont,.edu{ 
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center; /*ensures vertical centering.*/
+    justify-content: end; 
+    padding: 0 10px;
+     
+   
+}
+
+
+.edu a, .cont a {
+    text-decoration: none;
+    color: #f2e9e4;
+    font-size: 18px;
+    justify-content: right;
+
+  
+   
+}
+.cont a{
+    text-decoration: none;
+    color: #f2e9e4;
+    align-items: center;
+}
+/*greet outer div*/
+.intro{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.greet{
+    min-width: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+    animation: slideIn 1.2s ease forwards;
+   
+   
+}
+.space{
+    height: 30px;
+    width: 100%;
+}
+@keyframes slideIn {
+  /* from { transform: translateX(-100%); }
+  to { transform: translateX(0); } */
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.greet p{ 
+    color: #dbbadd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    
+    
+    
+}
+
+
+
+
+#box{
+    background-color: #a3c4f3;
+    color:#231942;
+    font-size: 20px;
+    width:100px;
+    height: 100px;
+    margin: 20px;
+
+}
+button{
+    color: rgb(104, 60, 207);
+    background-color: #f49ced;
+   
+}
+#inner{
+  
+    width:50px;
+    height:50px;
+    margin: 20px;
+}
+
+
+/*what i do . arrange pics and para in intro div.*/
+.what-do{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center; 
+    text-align: center;
+
+}
+#do-msg{
+    color:#FFD700;
+    font-size: 1.5rem;
+
+}
+#doing-outer{
+   height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* ✅ allows items to wrap to next line */
+  gap: 20px 40px;       /* adds spacing between items */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+}
+
+.doing{
+    height: auto;
+    max-width: 250px;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 10px;
+
+}
+img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.doing{
+   
+    max-width: 400px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    
+}
+/* Paragraph styling */
+.doing p {
+  font-size: 1rem;
+  color: #dbbadd;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+ @media (max-width: 400px) {
+  .greet {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .doing {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .doing img {
+    margin-bottom: 10px;
+  }
+
+  #doing-outer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .doing p{
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
